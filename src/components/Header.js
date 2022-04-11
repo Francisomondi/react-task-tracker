@@ -1,9 +1,14 @@
+import Button from './Button'
 
 const Header = ({ title }) => {
     return (
-        <div>
+        <header className="header">
             <h1>{title}</h1>
-        </div>
+            <Button color="green" text="click here" />
+            <Button color="yellow" text="click click" />
+            <Button color="blue" text="here click" />
+
+        </header>
     )
 }
 
