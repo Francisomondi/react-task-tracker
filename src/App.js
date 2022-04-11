@@ -1,12 +1,13 @@
-;
+import Header from './components/Header'
+import PropTypes from 'prop-types'
+
 function App() {
 
-  const name = "Francis"
+
   return (
     <div className="container">
-      <h1>Hello from Francis</h1>
+      <Header title='Hello header' />
 
-      <p>Hello {name}</p>
     </div>
   );
 }
