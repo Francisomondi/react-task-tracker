@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 
 const Button = ({ color, text, onClick }) => {
 
-
-
     return (
         <div>
             <button
@@ -18,6 +16,7 @@ const Button = ({ color, text, onClick }) => {
 Button.propTypes = {
     text: PropTypes.string,
     color: PropTypes.string,
+    onClick: PropTypes.string,
 }
 
 export default Button
