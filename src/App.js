@@ -11,7 +11,7 @@ function App() {
       id: 1,
       description: "pick the baby from daycare",
       day: " 14th february",
-      reminder: true,
+      reminder: false,
     },
     {
       id: 2,
@@ -37,8 +37,10 @@ function App() {
   //Toggle reminder
 
   const ToggleReminder = (id) => {
-    console.log(id)
+    setTasks(tasks.map((task) =>
+      task.id === id ? { ...task, reminder: !task.reminder } : task))
   }
+
 
   return (
 
