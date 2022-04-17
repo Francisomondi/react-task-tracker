@@ -2,6 +2,7 @@ import { useState } from "react"
 import Header from './components/Header'
 import Greet from './components/Greet'
 import Tasks from './components/Tasks'
+import AddTask from "./components/AddTask";
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
 
     <div className="container">
       <Header title='Task Tracker' />
+      <AddTask />
       {tasks.length > 0 ? <Tasks tasks={tasks}
         onDelete={deleteTask} onToggle={ToggleReminder}
       /> : ('no tasks to display')
